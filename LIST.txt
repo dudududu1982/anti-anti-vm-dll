@@ -1,0 +1,26 @@
+LIST OF API TO HOOK:
+files:
+
+registry:
+
+processes:
+
+servises:
+
+other:
+GetComputerNameW()
+
+LIST OF FILES TO HIDE:
+
+LIST OF PREOCESSES TO HIDE:
+
+LIST OF SERVICES TO HIDE:
+
+LIST OF REGISTRY KEY TO HIDE:
+
+OTHER CHECKS:
+1. CPUID check for string value of eax,ebx,ecx,edx when EAX=0x8000000x or EAX=0x40000000
+
+ANOTHER MATERIAL:
+1 ttps://github.com/cuckoosandbox/cuckoo/wiki/Hooked-APIs-and-Categories - long list of values to hide.
+2 https://github.com/MalwareTech/FstHook/blob/master/FstHook/Main.cpp - other optiob for hooking
