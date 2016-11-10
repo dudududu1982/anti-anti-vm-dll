@@ -21,7 +21,7 @@ typedef HANDLE (WINAPI *CREATEFILEW)(LPCWSTR, DWORD, DWORD, LPSECURITY_ATTRIBUTE
 
 // Pointer for calling original MessageBoxW.
 MESSAGEBOXW fpMessageBoxW = NULL;
-CREATEFILEW fpCreteFileW= NULL; 
+CREATEFILEW fpCreateFileW= NULL; 
 
  //Detour function which overrides MessageBoxW.
 int WINAPI DetourMessageBoxW(HWND hWnd, LPCWSTR lpText, LPCWSTR lpCaption, UINT uType)
@@ -40,7 +40,7 @@ HANDLE WINAPI DetourCreateFileW(LPCWSTR lpFileName, DWORD dwDesiredAccess,DWORD 
          return INVALID_HANDLE_VALUE; 
       } 
    } 
-    return fpCreteFileW(lpFileName, dwDesiredAccess, dwShareMode, lpSecurityAttributes, dwCreationDisposition, dwFlagsAndAttributes, hTemplateFile); 
+    return fpCreateFileW(lpFileName, dwDesiredAccess, dwShareMode, lpSecurityAttributes, dwCreationDisposition, dwFlagsAndAttributes, hTemplateFile); 
 
 } 
 
@@ -79,7 +79,7 @@ BOOL APIENTRY DllMain( HANDLE hModule, DWORD  ul_reason_for_call, LPVOID lpReser
 		//	return FALSE;
 		//}
 		 // Create a hook for MessageBoxW, in disabled state. 
-		if (MH_CreateHookApiEx(L"Kernel32", "CreateFileW", &DetourCreateFileW, &fpCreteFileW) != MH_OK) 
+		if (MH_CreateHookApiEx(L"Kernel32", "CreateFileW", &DetourCreateFileW, &fpCreateFileW) != MH_OK) 
 		{ 
 			return 1; 
 		} 
