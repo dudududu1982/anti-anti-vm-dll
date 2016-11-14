@@ -18,24 +18,31 @@ the new location is HKEY_LOCAL_MACHINE\Software\wow6432node\Microsoft\Windows NT
 refrences:
 
 1. AppInit_DLLs:
+
 https://support.microsoft.com/he-il/kb/197571
 
 2. anti vm\sandbox techniques:
+
 https://sentinelone.com/blogs/sfg-furtims-parent/
 http://blog.cyberbitsolutions.com/anti-vm-and-anti-sandbox-explained/
 https://www.sans.org/reading-room/whitepapers/forensics/detecting-malware-sandbox-evasion-techniques-36667
 
 3. MinHook library:
+
 http://www.codeproject.com/Articles/44326/MinHook-The-Minimalistic-x-x-API-Hooking-Libra
 
 4. anti vm\sandbox malware samples\PoC:
+
 https://github.com/LordNoteworthy/al-khaser/tree/ff8d53891709b407cbf43a323abc302730504fae
+
 https://github.com/AlicanAkyol/sems
 
 5. list of hooked functions:
+
 CreateFileW,
 
 5. todo list:
+
 https://github.com/cuckoosandbox/cuckoo/wiki/Hooked-APIs-and-Categories
 hook:
 CreateFile2
