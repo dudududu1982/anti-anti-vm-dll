@@ -36,3 +36,11 @@ GetFullPathNameW, GetFullPathNameA
 GetFileAttributes , GetFileAttributesEx
 EnumProcesses
 Process32FirstW , Process32FirstA, Process32NextW , Process32NextA
+RegOpenKeyEx,RegOpenKey, 
+RegCreateKeyEx, RegCreateKey
+RegEnumKeyEx, RegEnumKey
+RegEnumValue, RegGetValue, 
+
+6. hook native c function (as fopen):
+hooking functions from msvcrt.dll
+
