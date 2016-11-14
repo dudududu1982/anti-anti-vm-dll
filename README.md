@@ -9,6 +9,10 @@ One of the main goals is that the dll will be easy to configure, in order to let
 
 The way to use the dll is to write its path to AppInit_DLLs registry value, and then every process that load user32.dll will load my dll as well.
 
+when installing on 64 bit host need to do next changes:
+1. instead of edit AppInit_DLLs key on HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows
+the new location is HKEY_LOCAL_MACHINE\Software\wow6432node\Microsoft\Windows NT\CurrentVersion\Windows
+2. compile dll as 64 bit application
 
 
 refrences:
