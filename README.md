@@ -28,6 +28,7 @@ http://www.codeproject.com/Articles/44326/MinHook-The-Minimalistic-x-x-API-Hooki
 CreateFileW,
 
 5. todo list:
+https://github.com/cuckoosandbox/cuckoo/wiki/Hooked-APIs-and-Categories
 hook:
 CreateFile2
 FindFirstFileW, FindFirstFileA, FindFirstFileEx , FindNextFileW , FindNextFileA
