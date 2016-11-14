@@ -28,7 +28,11 @@ https://www.sans.org/reading-room/whitepapers/forensics/detecting-malware-sandbo
 3. MinHook library:
 http://www.codeproject.com/Articles/44326/MinHook-The-Minimalistic-x-x-API-Hooking-Libra
 
-4. list of hooked functions:
+4. anti vm\sandbox malware samples\PoC:
+https://github.com/LordNoteworthy/al-khaser/tree/ff8d53891709b407cbf43a323abc302730504fae
+https://github.com/AlicanAkyol/sems
+
+5. list of hooked functions:
 CreateFileW,
 
 5. todo list:
@@ -41,7 +45,7 @@ GetFullPathNameW, GetFullPathNameA
 GetFileAttributes , GetFileAttributesEx
 EnumProcesses
 Process32FirstW , Process32FirstA, Process32NextW , Process32NextA
-RegOpenKeyEx,RegOpenKey, 
+RegOpenKeyEx,RegOpenKey, RegOpenKeyExA
 RegCreateKeyEx, RegCreateKey
 RegEnumKeyEx, RegEnumKey
 RegEnumValue, RegGetValue, 
