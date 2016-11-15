@@ -54,3 +54,4 @@ RegEnumValue, RegGetValue,
 6. hook native c function (as fopen):
 hooking functions from msvcrt.dll
 
+7. reverse
