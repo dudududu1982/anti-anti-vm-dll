@@ -55,3 +55,18 @@ RegEnumValue, RegGetValue,
 hooking functions from msvcrt.dll
 
 7. reverse
+
+
+processes:
+Process32First
+Process32Next
+
+services:
+EnumServicesStatus
+
+registry:
+RegOpenKeyExA = Opens the specified registry key. relevant if i want key not to exist at all.
+RegQueryValueExA = Retrieves the type and data for the specified value name associated with an open registry key. relevant if i want the key to exist with another value
+
+files:
+GetFileAttributesA
