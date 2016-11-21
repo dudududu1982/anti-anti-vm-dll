@@ -57,6 +57,12 @@ hooking functions from msvcrt.dll
 7. reverse
 
 
+
+
+decision:
+use https://github.com/AlicanAkyol/sems and hook all of its win32api calls listed below:
+
+
 processes:
 Process32First
 Process32Next
