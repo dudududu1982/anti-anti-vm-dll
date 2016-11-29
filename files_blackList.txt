@@ -1,0 +1,5 @@
+C:\WINDOWS\system32\vm3dgl.dll
+C:\WINDOWS\system32\vm3dum.dll
+C:\WINDOWS\system32\vmGuestLib.dll
+C:\WINDOWS\system32\vmGuestLibJava.dll
+C:\WINDOWS\system32\vmhgfs.dll
